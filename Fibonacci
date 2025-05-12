@@ -1,0 +1,11 @@
+ 
+
+// let A = nil aug 0 and B = nil in rec Fibb n = (n<0) -> 'EnterPositiveNumber' | (n eq 1) -> A | (n eq 2) -> A aug 1 | B aug Fibb(n-1)
+// in 
+// print(Fibb 3)
+
+let Fibonacci n = recursive_fib n where 
+rec recursive_fib n = (n eq 0 -> 0 | (n eq 1 -> 1 | recursive_fib (n-1) + recursive_fib (n-2))) within
+rec print_fibonacci_range a b = (Isinteger a & Isinteger b) -> (b eq a -> (Print(Fibonacci a), Print(' ')) | (Print(Fibonacci b), Print(' '), print_fibonacci_range a (b-1))) | Print('')
+in
+print_fibonacci_range 11 14

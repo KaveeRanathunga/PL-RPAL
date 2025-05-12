@@ -1,0 +1,4 @@
+let 
+    AllSum x = x*(x+1)/2
+in
+    Print(AllSum 5)

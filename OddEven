@@ -1,0 +1,5 @@
+let 
+    OddEven n = func n where
+    rec func n = n eq 1 -> 'odd' | (n eq 2 -> 'even' | func (n - 2))
+in 
+print(OddEven 7)

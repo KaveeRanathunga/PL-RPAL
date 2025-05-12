@@ -1,0 +1,13 @@
+
+// let greatest X Y = X < Y -> Y | X
+// in
+// print(greatest(greatest 2 1) 0) 
+
+
+// let greatest X Y Z = X>Y & X>Z -> X | Y>Z -> Y | Z
+// in 
+// print(greatest 1 2 3)
+ 
+let greatest X Y Z = (X > Y & X > Z) -> X | (Y > Z) -> Y | Z
+in 
+print(greatest 9 3 3)  
