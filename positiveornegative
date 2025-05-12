@@ -1,8 +1,0 @@
-let PosNeg X = X < 0 -> 'Negative' | 'Positive'
-in 
-
-print(PosNeg (-3), PosNeg 3 )
-
- 
- 
- 
